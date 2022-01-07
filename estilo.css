@@ -1,0 +1,50 @@
+html, body{
+    margin:0;
+    padding: 0;
+    background-color: black;
+
+}
+
+.relogio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#movimento{
+    width: 500px;
+    height: 100px;
+    animation: go-back 3s infinite alternate;
+}
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+.display{
+    background-color: #2c2e43;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    line-height: 400px;
+    border-radius: 40%;
+    color:rgba(255, 255, 255, 0.9);
+    font-size: 6rem;
+    font-family: 'Playfair Display', serif;
+    background-image: url("imgs/1.webp");
+    opacity: 0.1px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+footer {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #333;
+    font-family: 'Bebas Neue', cursive;
+}
